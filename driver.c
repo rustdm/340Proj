@@ -23,10 +23,10 @@ void* t_run(void* i)
     // creates a string of the GET request using the tickers located in the infile
     char* currTicker = (char*)i;
     char* request = malloc(sizeof(char)*1000);
-    strcpy(request, "https://api.iextrading.com/1.0/stock/");
+    strcpy(request, "https://cloud.iexapis.com/stable/stock/");
     strcat(request, currTicker);
     //   printf("current ticker is %s\n", currTicker);
-    strcat(request, "/batch?types=quote");
+    strcat(request, "/quote?token=pk_3a3d74105f3c4e0996ccb90192014c97");
     //  strcat(request, ",news,chart&range=1m&last=10/"); //Should we decide to do more than just basic price info
     //  printf("Thread GET request :  %s\n",request);
 
