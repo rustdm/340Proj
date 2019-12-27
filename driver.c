@@ -72,13 +72,13 @@ int main(){
 
 
 
-  /* Testing our file input and ticker storage
+  // Testing our file input and ticker storage
   int j=0;
   while(j<num_tickers && tickArray[j] != NULL){
-   // printf("Ticker Number %d is: %s\n", j , tickArray[j] );
+    printf("Ticker Number %d is: %s\n", j , tickArray[j] );
     j++;
   }
-  */
+  //
 
     curl_global_init(CURL_GLOBAL_DEFAULT); // Initializes the global curl variable (not thread safe)
 
